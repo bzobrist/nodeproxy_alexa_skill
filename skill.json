@@ -1,0 +1,74 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Control Russound MCA-C3,C5 controllers via NodeProxy",
+          "examplePhrases": [
+            "Alexa, ask Russound speakers to list my zones",
+            "Alexa, tell Russound home audio to turn on zone 1",
+            "Alexa, tell Russound home audio to change zone 1 source to 1"
+          ],
+          "keywords": [
+            "Russound",
+            "home",
+            "audio",
+            "music",
+            "multizone",
+            "multisource"
+          ],
+          "name": "nodeproxy russound audio",
+          "description": "Using Node Proxy written for smart things able to control Russound with Alexa skill.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "No special instructions.",
+      "category": "SMART_HOME",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:496638748403:function:e15abe09-639f-4abc-bfd5-297a8c4cd432:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:496638748403:function:e15abe09-639f-4abc-bfd5-297a8c4cd432:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:496638748403:function:e15abe09-639f-4abc-bfd5-297a8c4cd432:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:496638748403:function:e15abe09-639f-4abc-bfd5-297a8c4cd432:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "http://dabblelab.com/terms",
+          "privacyPolicyUrl": "http://dabblelab.com/privacy"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

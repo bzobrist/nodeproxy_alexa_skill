@@ -1,0 +1,99 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "russound speakers",
+          "intents": [
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "GetRemoteDataIntent",
+                  "slots": [],
+                  "samples": [
+                      "how many rooms are there",
+                      "how man zones are there"
+                  ]
+              },
+              {
+                  "name": "TurnZoneOnOffIntent",
+                  "slots": [
+                      {
+                          "name": "Zone",
+                          "type": "AMAZON.NUMBER"
+                      },
+                      {
+                          "name": "Action",
+                          "type": "ON_OR_OFF"
+                      }
+                  ],
+                  "samples": [
+                      "turn {Action} zone {Zone}",
+                      "turn zone {Zone} {Action}",
+                      "to turn {Action} zone {Zone}",
+                      "to turn zone {Zone} {Action}"
+                  ]
+              },
+              {
+                  "name": "SetZoneSourceIntent",
+                  "slots": [
+                      {
+                          "name": "Zone",
+                          "type": "AMAZON.NUMBER"
+                      },
+                      {
+                          "name": "Source",
+                          "type": "AMAZON.NUMBER"
+                      }
+                  ],
+                  "samples": [
+                      "set zone {Zone} to source {Source}",
+                      "change zone {Zone} to source {Source}",
+                      "set source {Source} for zone {Zone}",
+                      "change source {Source} for zone {Zone}",
+                      "to set zone {Zone} to source {Source}",
+                      "to change zone {Zone} to source {Source}",
+                      "to set source {Source} for zone {Zone}",
+                      "to change source {Source} for zone {Zone}"
+                  ]
+              },
+              {
+                  "name": "AllOnOffIntent",
+                  "slots": [
+                      {
+                          "name": "Action",
+                          "type": "ON_OR_OFF"
+                      }
+                  ],
+                  "samples": [
+                      "turn {Action} everything",
+                      "to turn {Action} everything",
+                      "turn everything {Action}",
+                      "to turn everything {Action}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "ON_OR_OFF",
+                  "values": [
+                      {"name":{"value":"on"}},
+                      {"name":{"value":"off"}}
+                  ]
+              }
+          ]
+      }
+  }
+}
